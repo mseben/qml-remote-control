@@ -1,7 +1,8 @@
 ### run
-```cmake -B build
+```
+cmake -B build
 cmake --build build/
-build/qmltestapp/qmltestapp
+LD_PRELOAD=build/libqmlremotecontrol.so build/qmltestapp/qmltestapp
 ```
 ### test
 ```
